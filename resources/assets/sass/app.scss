@@ -1,0 +1,45 @@
+
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+
+
+.img-responsive{
+  margin: 0 auto;
+}
+
+a {
+  //#color: @link-color;
+  text-decoration: none!important;
+
+  &:hover {
+    //#color: @link-hover-color;
+    text-decoration: underline;
+  }
+}
+
+.panel-heading.image-heading{
+  padding: 0px;
+}
+
+.img-header{
+  height: 350px;
+}
+
+
+.mapIndex
+{
+  height: 400px;
+}
+
+.mapAll
+{
+  height: 95%;
+}
+//@import "node_modules/bulma/bulma";
