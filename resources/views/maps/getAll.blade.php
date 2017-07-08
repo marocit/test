@@ -25,7 +25,7 @@
           mapTypeId: 'terrain'
         });
 
-        var url = '{{ config('app.url', 'default') }}/fetch'
+        var url = '/fetch'
         fetch(url)
         .then((resp) => resp.json())
         .then(function(data) {

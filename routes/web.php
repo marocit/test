@@ -45,7 +45,7 @@ Route::get('category/{category}','TweetsController@category' )->name('category')
 Route::get('category1/{category}','TweetsController@category1' )->name('category1');
 
 Route::get('maps', 'MapsController@maps');
-Route::get('mapsall', 'MapsController@getAll');
+Route::get('mapsall', 'MapsController@getAll')->name('mapsAll');
 Route::get('fetch', 'MapsController@fetchAll');
 
 Route::post('store', 'MapsController@store');
