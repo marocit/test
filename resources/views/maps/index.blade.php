@@ -43,7 +43,7 @@
             @endif
           </div>
           <div class="form-group ">
-                    {!! Form::submit('Add Position', ['class' => 'btn red']) !!}
+                    {!! Form::submit('Add Position', ['class' => 'btn btn-red']) !!}
           </div>
       </div>
     </div>
