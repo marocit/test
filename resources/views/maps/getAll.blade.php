@@ -26,7 +26,7 @@
         });
 
 
-        fetch('http://laravel.favorite.dev/fetch')
+        fetch('https://laravel.favorite.dev/fetch')
         .then((resp) => resp.json())
         .then(function(data) {
             
