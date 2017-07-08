@@ -25,8 +25,8 @@
           mapTypeId: 'terrain'
         });
 
-
-        fetch('https://laravel.favorite.dev/fetch')
+        var url = '{{ config('app.url', 'default') }}'
+        fetch(url)
         .then((resp) => resp.json())
         .then(function(data) {
             
