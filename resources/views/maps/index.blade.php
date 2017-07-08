@@ -9,20 +9,20 @@
 
     <div class="row">
       <div class="col-md-3 col-md-offset-4">
+           <div class="form-group">
+              {!! Form::label('searchmap', 'Suche nach Standort:') !!}
+              <div class="input-icon input-icon-sm right">
+                  {!! Form::text('searchmap', null, ['class' => 'form-control input-sm']) !!}
+              </div>
+          </div>
           <div class="form-group {{ $errors->has('title') ? 'has-error': '' }}">
-            {!! Form::label('title', 'Title:') !!}
+            {!! Form::label('title', 'Beschreibung:') !!}
             <div class="input-icon input-icon-sm right">
                 {!! Form::text('title', null, ['class' => 'form-control input-sm']) !!}
             </div>
             @if($errors->has('title'))
                 <span class="help-block">{{ $errors->first('title') }}</span>
             @endif
-          </div>
-          <div class="form-group">
-              {!! Form::label('searchmap', 'SearchMap:') !!}
-              <div class="input-icon input-icon-sm right">
-                  {!! Form::text('searchmap', null, ['class' => 'form-control input-sm']) !!}
-              </div>
           </div>
           <div class="form-group {{ $errors->has('lat') ? 'has-error': '' }}">
               {!! Form::label('lat', 'Lat:') !!}
@@ -76,34 +76,7 @@
           zoom: 15
         });
 
-        var infoWindow = new google.maps.InfoWindow({map: map});
-
-        // Try HTML5 geolocation.
-        if (navigator.geolocation) {
-          navigator.geolocation.getCurrentPosition(function(position) {
-            var pos = {
-              lat: position.coords.latitude,
-              lng: position.coords.longitude
-            };
-
-            infoWindow.setPosition(pos);
-            infoWindow.setContent('Location found.');
-            map.setCenter(pos);
-          }, function() {
-            handleLocationError(true, infoWindow, map.getCenter());
-          });
-        } else {
-          // Browser doesn't support Geolocation
-          handleLocationError(false, infoWindow, map.getCenter());
-        }
-      }
-
-      function handleLocationError(browserHasGeolocation, infoWindow, pos) {
-        infoWindow.setPosition(pos);
-        infoWindow.setContent(browserHasGeolocation ?
-                              'Error: The Geolocation service failed.' :
-                              'Error: Your browser doesn\'t support geolocation.');
-      }
+        
 
         var marker = new google.maps.Marker({
           position: {
@@ -143,7 +116,7 @@
 
 
 
-      //}
+      }
 
       
     
