@@ -68,7 +68,7 @@
 
     </script>
 @endpush
- <script async
+ <script defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCgpnnyYJWfI52yozhc4DeQsjwIOy0yBs4&libraries=places&callback=initAutocomplete">
     </script>
 
