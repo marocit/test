@@ -82,7 +82,11 @@
 
     <!-- Scripts -->
    <!-- <script src="{{ asset('js/app.js') }}"></script> -->
+   @stack('scripts')
+    <!--  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCgpnnyYJWfI52yozhc4DeQsjwIOy0yBs4&callback=initAutocomplete" async defer></script> -->
    <script src="{{ mix('js/app.js') }}"></script>
-   <script src="https://unpkg.com/vuetify/dist/vuetify.min.js"></script>
+
+
+  <!--  <script src="https://unpkg.com/vuetify/dist/vuetify.min.js"></script> -->
 </body>
 </html>

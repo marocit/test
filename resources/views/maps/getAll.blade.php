@@ -10,7 +10,7 @@
 
 
 
-
+@push('scripts')
     <script>
       
       
@@ -67,8 +67,9 @@
       
     
     </script>
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCgpnnyYJWfI52yozhc4DeQsjwIOy0yBs4&callback=initAutocomplete">
+@endpush
+ <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCgpnnyYJWfI52yozhc4DeQsjwIOy0yBs4&libraries=places&callback=initAutocomplete">
     </script>
+    
 
-</script>
