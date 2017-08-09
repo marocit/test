@@ -12,8 +12,8 @@
 
 @push('scripts')
     <script>
-      
-      
+
+
 
       function initAutocomplete() {
         var map = new google.maps.Map(document.getElementById("map"), {
@@ -29,8 +29,8 @@
         fetch(url)
         .then((resp) => resp.json())
         .then(function(data) {
-            
-          
+
+
 
 
 
@@ -44,7 +44,7 @@
           });
         }
         marker.addListener('click', toggleBounce);
-      
+
 
         function toggleBounce() {
           if (marker.getAnimation() !== null) {
@@ -55,21 +55,21 @@
         }
 
 
-        
-        
+
+
         });
-        
-        
-          
+
+
+
 
       }
 
-      
-    
+
+
     </script>
 @endpush
- <script async defer
+ <script async
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCgpnnyYJWfI52yozhc4DeQsjwIOy0yBs4&libraries=places&callback=initAutocomplete">
     </script>
-    
+
 

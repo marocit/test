@@ -47,13 +47,13 @@
           </div>
       </div>
     </div>
-          
-    
-     
-    
 
-                                    
-                          
+
+
+
+
+
+
 {!! Form::close() !!}
 
 
@@ -65,7 +65,7 @@
 
 @push('scripts')
     <script>
-      
+
 
       function initAutocomplete() {
         var map = new google.maps.Map(document.getElementById("map"), {
@@ -76,7 +76,7 @@
           zoom: 15
         });
 
-        
+
 
         var marker = new google.maps.Marker({
           position: {
@@ -118,11 +118,11 @@
 
       }
 
-      
-    
+
+
     </script>
 @endpush
-    <script async defer
+    <script async
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCgpnnyYJWfI52yozhc4DeQsjwIOy0yBs4&libraries=places&callback=initAutocomplete">
     </script>
 
